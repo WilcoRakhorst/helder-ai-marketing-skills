@@ -18,9 +18,10 @@
 
 ## References
 
-- Google Search Central: Creating helpful, reliable, people-first content — developers.google.com/search/docs/fundamentals/creating-helpful-content
-- Google Search Central: How Search Works — developers.google.com/search/docs/fundamentals/how-search-works
-- Google on AI content (2023) — developers.google.com/search/blog/2023/02/google-search-and-ai-content
-- Princeton/Georgia Tech/Allen Institute, "GEO: Generative Engine Optimization" (2023) — arxiv.org/abs/2311.09735
-- Moz: The Impact of AI on SEO — moz.com/blog/impact-of-ai-on-seo
-- Search Engine Journal: Generative Engine Optimization guide — searchenginejournal.com/generative-engine-optimization/
+- Aggarwal, P. et al. (2024): "GEO: Generative Engine Optimization", KDD 2024 — [arXiv:2311.09735](https://arxiv.org/abs/2311.09735) (Princeton/IIT Delhi; peer-reviewed; visibility boost up to 40%)
+- Google Search Central: [Creating helpful, reliable, people-first content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
+- Google Search Central: [How Search Works](https://developers.google.com/search/docs/fundamentals/how-search-works)
+- Google on AI content (2023): [Google Search's guidance about AI-generated content](https://developers.google.com/search/blog/2023/02/google-search-and-ai-content)
+- Google: [Search Quality Rater Guidelines (E-E-A-T)](https://services.google.com/fh/files/misc/hsw-sqrg.pdf) (PDF)
+- Ahrefs: [14 Ways to Use AI for Better, Faster SEO](https://ahrefs.com/blog/ai-seo/) (Ryan Law, 2024) — vervangt eerder genoemde Moz-bron die niet meer beschikbaar is
+- Search Engine Journal: [Generative AI And SEO Strategy](https://www.searchenginejournal.com/generative-ai-and-seo-strategy-getting-the-most-out-of-your-tools/493591/)

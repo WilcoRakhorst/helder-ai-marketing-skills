@@ -25,7 +25,7 @@ SEO is the foundation that GEO builds on. See the geo-optimization skill for AI 
 
 **Crawlability:** XML sitemap up-to-date | robots.txt correct | no unintended noindex | canonical tags for duplicates | clean URLs | 301 redirects (no 404s) | HTTPS required
 
-**Core Web Vitals:** LCP < 2.5s | INP < 200ms | CLS < 0.1. For details: use a web performance optimization tool or skill.
+**Core Web Vitals:** LCP < 2.5s | INP < 200ms | CLS < 0.1 (source: web.dev/articles/vitals). For details: use a web performance optimization tool or skill.
 
 **Schema Markup:** LocalBusiness (business details) | Article (blog posts) | FAQPage (FAQs) | BreadcrumbList | Service | Person (author, E-E-A-T) | VideoObject (videos)
 
@@ -173,5 +173,11 @@ SEO metadata can be automated via the WordPress REST API, reducing manual work s
 ## Data integrity
 
 - Only verified facts; no rankings or statistics without a source
-- Google Search Central: developers.google.com/search/docs/fundamentals/creating-helpful-content
-- Google How Search Works: developers.google.com/search/docs/fundamentals/how-search-works
+
+## References
+
+- Google: [Web Vitals](https://web.dev/articles/vitals) (LCP, INP, CLS thresholds)
+- Google Search Central: [Creating helpful, reliable, people-first content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
+- Google Search Central: [How Search Works](https://developers.google.com/search/docs/fundamentals/how-search-works)
+- Yoast: [SEO REST API](https://developer.yoast.com/customization/apis/rest-api/) (read-only; meta via WP REST API meta object)
+- WordPress: [REST API — Posts](https://developer.wordpress.org/rest-api/reference/posts/)

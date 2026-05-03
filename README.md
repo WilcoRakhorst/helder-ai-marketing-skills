@@ -1,19 +1,52 @@
 # Marketing Skills for GitHub Copilot
 
-A curated set of **AI agent skills** for SEO, Generative Engine Optimization (GEO), keyword research, and content creation. Designed for [GitHub Copilot](https://docs.github.com/en/copilot) and compatible AI agents that follow the [Agent Skills](https://agentskills.io) open standard.
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-Skills-blue?logo=github)](https://docs.github.com/en/copilot)
+[![VS Code](https://img.shields.io/badge/VS%20Code-Compatible-007ACC?logo=visual-studio-code)](https://code.visualstudio.com/)
 
-These skills turn your AI assistant into a knowledgeable marketing strategist that understands modern search — both traditional (Google) and AI-powered (ChatGPT, Gemini, Perplexity, Copilot).
+> Turn GitHub Copilot into a senior marketing strategist that understands **SEO, AI search (GEO), keyword research, and content creation** — all inside your editor.
 
-## Skills included
+A curated set of **AI agent skills** for modern search marketing. Designed for [GitHub Copilot](https://docs.github.com/en/copilot) and compatible AI agents that follow the [Agent Skills](https://agentskills.io) open standard.
 
-| Skill | Description |
-|:------|:------------|
-| **[seo-strategy](seo-strategy/)** | Complete SEO playbook: technical SEO, on-page optimization, content clusters, internal linking, local SEO, and WordPress REST API automation |
-| **[geo-optimization](geo-optimization/)** | Generative Engine Optimization — optimize content so AI search engines cite your brand in generated answers |
-| **[seo-keyword-research](seo-keyword-research/)** | Competitive keyword research workflow: discovery, intent classification, SERP analysis, per-page mapping, and content gap analysis |
-| **[content-creator](content-creator/)** | Strategic content creation hub: brand voice frameworks, SEO pre-checks, content templates, social media optimization, and anti-AI-detection writing guidelines |
+These skills cover both traditional search (Google) and AI-powered search engines (ChatGPT, Gemini, Perplexity, Copilot Search).
 
-## How the skills connect
+---
+
+## Quick Start
+
+**One-liner installation** — clone directly into your project:
+
+```bash
+git clone https://github.com/helder-ai/marketing-skills.git .github/skills/marketing && echo "Done! Copilot will auto-discover the skills."
+```
+
+Or add as a **Git submodule** (recommended for teams):
+
+```bash
+git submodule add https://github.com/helder-ai/marketing-skills.git .github/skills/marketing
+```
+
+That's it. Open VS Code, start Copilot Chat in agent mode, and ask something like:
+
+- *"Do keyword research for my bakery website"*
+- *"Create an SEO strategy for my SaaS product"*
+- *"Optimize this blog post for AI search engines"*
+- *"Write a LinkedIn post based on this article"*
+
+Copilot automatically discovers and invokes the right skill based on your prompt.
+
+---
+
+## Skills Included
+
+| Skill | What it does |
+|:------|:-------------|
+| **[seo-strategy](seo-strategy/)** | Complete SEO playbook: technical SEO, on-page optimization, content clusters, internal linking, local SEO, WordPress REST API automation |
+| **[geo-optimization](geo-optimization/)** | Generative Engine Optimization — get your brand cited in AI-generated answers (ChatGPT, Gemini, Perplexity) |
+| **[seo-keyword-research](seo-keyword-research/)** | Full keyword research workflow: discovery → intent classification → SERP analysis → content gap analysis |
+| **[content-creator](content-creator/)** | Content creation hub: brand voice, SEO pre-checks, templates, social media optimization, anti-AI-detection writing |
+
+### How the skills connect
 
 ```
 seo-keyword-research     →  Find what your audience searches for
@@ -25,56 +58,137 @@ geo-optimization         →  Get cited by AI search engines
 content-creator          →  Write content that ranks AND gets cited
 ```
 
-## WordPress REST API automation
+---
 
-These skills are designed to work well with WordPress sites. The `seo-strategy` skill includes guidance on automating SEO metadata (titles, meta descriptions) via the WordPress REST API, including Yoast SEO field mapping. The `content-creator` skill covers automated publishing workflows. This makes it possible to go from keyword research to published, SEO-optimized content with minimal manual steps.
+## Demo
 
-## Installation
+<!-- TODO: Add screenshots or a short GIF/video showing:
+  1. User prompt in Copilot Chat
+  2. Skill being invoked automatically
+  3. Output (keyword research table / SEO audit / content draft)
+-->
 
-Copy the skill folders into your project's `.github/skills/` directory:
+> *Screenshots coming soon. Want to contribute one? Open a PR!*
+
+---
+
+## Use Cases
+
+| You want to... | Ask Copilot... |
+|:---------------|:---------------|
+| Research keywords for a new page | *"Find keywords for [topic] with search intent and difficulty"* |
+| Audit a page for SEO issues | *"Audit this page against the SEO checklist"* |
+| Optimize content for AI search | *"Score this article on the GEO scorecard"* |
+| Publish a blog post to WordPress | *"Create a blog post about [topic] and publish it as a draft"* |
+| Write social media posts | *"Write LinkedIn and Twitter posts to promote this article"* |
+| Build a content cluster | *"Plan a content cluster around [pillar topic]"* |
+
+---
+
+## Installation Options
+
+### Option 1: Clone (quickest)
+
+```bash
+git clone https://github.com/helder-ai/marketing-skills.git .github/skills/marketing
+```
+
+### Option 2: Git submodule (keeps skills updatable)
+
+```bash
+git submodule add https://github.com/helder-ai/marketing-skills.git .github/skills/marketing
+git commit -m "Add marketing skills for Copilot"
+```
+
+### Option 3: Manual copy
+
+Download and copy the skill folders into your project:
 
 ```
 your-project/
 └── .github/
     └── skills/
-        ├── seo-strategy/
-        │   └── SKILL.md
-        ├── geo-optimization/
-        │   ├── SKILL.md
-        │   └── references/
-        ├── seo-keyword-research/
-        │   ├── SKILL.md
-        │   └── references/
-        └── content-creator/
-            ├── SKILL.md
-            └── references/
+        └── marketing/
+            ├── seo-strategy/
+            ├── geo-optimization/
+            ├── seo-keyword-research/
+            └── content-creator/
 ```
 
-GitHub Copilot will automatically discover and use the skills based on your prompts. You can also invoke them directly using `/seo-strategy`, `/geo-optimization`, etc.
+### Option 4: Shared skills reference
 
-### Use as a shared skill
+Reference this repository directly from your Copilot instructions without copying files. See the [VS Code documentation on shared skills](https://code.visualstudio.com/docs/copilot/copilot-customization) for details.
 
-You can also reference this repository directly from your Copilot instructions. See the [VS Code documentation on shared skills](https://code.visualstudio.com/docs/copilot/copilot-customization) for details.
+---
 
 ## Requirements
 
-- **GitHub Copilot** (VS Code, JetBrains, or CLI) with agent mode enabled
-- A website to optimize (WordPress recommended for full automation, but the strategies apply to any CMS)
+- **GitHub Copilot** with agent mode enabled (VS Code, JetBrains, or CLI)
+- A website to optimize (WordPress recommended for automation; strategies work with any CMS)
 - For keyword research: web search capability in your AI agent
 
-## What makes these skills different
+---
 
-- **SEO + GEO combined** — Most SEO guides ignore AI search engines. These skills cover both traditional and AI-powered search as complementary strategies.
-- **Practical, not theoretical** — Every section includes actionable checklists, templates, and scoring frameworks (like the 16-criterion GEO scorecard).
-- **WordPress automation ready** — Includes REST API field mappings and publishing workflows so you can automate the entire pipeline.
-- **Anti-AI detection** — The content creator skill includes guidelines for writing AI-assisted content that reads naturally and avoids common AI writing patterns.
+## What Makes These Skills Different
+
+| Feature | Most SEO tools | These skills |
+|:--------|:---------------|:-------------|
+| SEO + GEO combined | ❌ | ✅ Traditional + AI search in one workflow |
+| Runs inside your editor | ❌ | ✅ No context-switching |
+| WordPress automation | ❌ | ✅ REST API field mappings + publish workflows |
+| Evidence-based | Varies | ✅ All claims backed by sources ([see references](seo-keyword-research/references/sources.md)) |
+| Anti-AI detection writing | ❌ | ✅ Guidelines for natural AI-assisted content |
+| GEO scorecard (16 criteria) | ❌ | ✅ Structured scoring framework |
+
+---
+
+## WordPress REST API Automation
+
+These skills integrate with WordPress sites. The `seo-strategy` skill includes:
+
+- Yoast SEO field mapping (`_yoast_wpseo_title`, `_yoast_wpseo_metadesc`)
+- Automated draft publishing via REST API
+- SEO metadata validation before publish
+
+Go from keyword research → written article → published WordPress draft in one session.
+
+---
+
+## Topics / Tags
+
+`github-copilot` · `copilot-skills` · `seo` · `geo` · `generative-engine-optimization` · `keyword-research` · `content-marketing` · `ai-skills` · `wordpress` · `marketing-automation`
+
+---
 
 ## Contributing
 
-Found an improvement? Open a PR or issue. These skills reflect real-world marketing practice — contributions from practitioners are especially welcome.
+Found an improvement? Open a PR or issue. These skills reflect real-world marketing practice — contributions from SEO practitioners are especially welcome.
+
+**Ideas for contributions:**
+- Additional skill: link building, technical audit automation
+- Translations (Dutch, German, etc.)
+- VS Code extension wrapper for Marketplace distribution
+- Screenshots and demo videos
+
+---
+
+## Roadmap
+
+- [ ] VS Code extension (install skills via Marketplace)
+- [ ] Additional skills: link building, competitor analysis
+- [ ] Multi-language support (NL, DE)
+- [ ] Interactive skill configuration wizard
+
+---
 
 ## License
 
 [CC BY-NC 4.0](LICENSE) — Free to use and adapt with attribution. Not for commercial use.
 
-Created by [Helder AI](https://helder-ai.nl) — Exploring how AI can make work easier and more fun.
+---
+
+<p align="center">
+  Created by <a href="https://helder-ai.nl">Helder AI</a> — Exploring how AI can make work easier and more fun.
+  <br><br>
+  <a href="https://github.com/helder-ai/marketing-skills/stargazers">⭐ Star this repo</a> if you find it useful!
+</p>

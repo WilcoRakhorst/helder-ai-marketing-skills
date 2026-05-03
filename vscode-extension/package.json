@@ -1,0 +1,55 @@
+{
+  "name": "marketing-skills-copilot",
+  "displayName": "Marketing Skills for GitHub Copilot",
+  "description": "SEO, GEO, keyword research & content creation skills for GitHub Copilot. Turn your AI assistant into a marketing strategist.",
+  "version": "1.0.0",
+  "publisher": "helder-ai",
+  "license": "CC-BY-NC-4.0",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/helder-ai/marketing-skills"
+  },
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "AI",
+    "Other"
+  ],
+  "keywords": [
+    "copilot",
+    "seo",
+    "marketing",
+    "geo",
+    "generative-engine-optimization",
+    "keyword-research",
+    "content-marketing",
+    "ai-skills",
+    "wordpress"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "marketingSkills.install",
+        "title": "Marketing Skills: Install skills into current workspace"
+      },
+      {
+        "command": "marketingSkills.update",
+        "title": "Marketing Skills: Update skills to latest version"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.90.0",
+    "typescript": "^5.4.0",
+    "@vscode/vsce": "^2.26.0"
+  }
+}

@@ -1,10 +1,6 @@
 ---
 name: content-creator
 description: "Create SEO-optimized marketing content with a consistent brand voice. Includes brand voice frameworks, SEO optimizer, content templates, and social media guides. Use when writing blog posts, social media content, developing brand voice, optimizing for SEO, planning content calendars, or when terms like 'content creation', 'brand voice', 'SEO optimization', 'social media marketing', 'blog writing', or 'content strategy' are mentioned."
-metadata:
-  version: 1.0.0
-  category: marketing
-  domain: content-marketing
 ---
 
 # Content Creator — Strategic Hub
@@ -87,7 +83,7 @@ Before publishing, run through this check:
 - Focus keyword in meta description (max 155 characters)
 
 ### Readability
-- **Flesch score**: At least 60 ("fairly easy")
+- **Flesch score**: At least 60 ("standard/plain English") — 70+ = "fairly easy". Note: since Yoast SEO 19.3 (July 2022), Flesch is shown in the Insights tab only; the active readability analysis now uses **word complexity** and **sentence length** checks instead.
 - **Transition words**: At least 30% of sentences contain a transition word. **Vary position** — not only at the start, also mid-sentence ("...is therefore...", "...however works...") to maintain natural rhythm
 - **Sentence length**: Max 25% of sentences longer than 20 words
 - **Passive voice**: Max 10% passive sentences
@@ -98,6 +94,14 @@ Before publishing, run through this check:
 - Standard blog post: **800-1,200 words**
 - In-depth article: **1,200-1,800 words**
 - Short update/news: **400-800 words**
+
+---
+
+## References
+
+- Yoast (2025): "The Flesch reading ease score: Why & how to use it" — score 60–69 = "Standard" (plain English) — yoast.com/flesch-reading-ease-score/
+- Note: Since Yoast SEO 19.3 (July 2022), Flesch is no longer an active readability check; replaced by word complexity + sentence length assessments
+- Google Search Central: Creating helpful content — developers.google.com/search/docs/fundamentals/creating-helpful-content
 
 Longer texts only when the topic demands it — for a busy professional, brevity is a quality.
 

@@ -21,7 +21,7 @@ SEO and GEO are complementary. Without an SEO foundation, GEO is impossible. Rel
 
 ## How AI selects sources
 
-Five signals (in order of importance):
+Five signals (based on GEO research + Google's helpful content guidelines; ranking is a practical prioritization, not an empirically proven hierarchy):
 
 1. **Direct answer:** Lead with the definition, not a lengthy introduction
 2. **Completeness:** Topic fully covered with connections; comprehensive articles win over short posts
@@ -51,7 +51,7 @@ Five signals (in order of importance):
 
 ## GEO scorecard
 
-Practical assessment (each criterion 1-5, total max 80):
+Practical assessment framework (own model, not scientifically validated; based on principles from Aggarwal et al. 2024 and Google E-E-A-T guidelines). Each criterion 1-5, total max 80:
 
 | Criterion                  | Question                                                         |
 |:---------------------------|:-----------------------------------------------------------------|
@@ -118,7 +118,7 @@ AI builds a knowledge graph. Goal: make your brand name inseparable from your ex
 - **Unique terminology:** introduce your own method or model; when people ask about it, AI must mention your brand
 - **Dataset schema:** own research or data? Use Dataset schema markup so AI recognizes you as a source
 - **Source diversity:** AI trusts a source faster when multiple platform types say the same thing. Ensure your core message and unique terms also appear on high-authority places that LLMs weigh heavily: Reddit, specialized industry forums, industry association sites. Positive mentions in unstructured data (forum discussions, reviews) reinforce the trustworthiness of your official web content.
-- **Reddit factor:** LLMs (especially ChatGPT and Gemini) weigh discussion platforms like Reddit and Quora extremely heavily for "human recommendations." Organic discussion of your brand or method in relevant subreddits is to GEO what link building was to SEO.
+- **Reddit factor:** LLMs (especially ChatGPT and Gemini) appear to weigh discussion platforms like Reddit and Quora heavily for "human recommendations" (widely observed in the SEO community; no peer-reviewed source). Organic discussion of your brand or method in relevant subreddits is to GEO what link building was to SEO.
 
 ## GEO improvement strategy
 
@@ -137,3 +137,44 @@ See [references/anti-patterns-and-references.md](references/anti-patterns-and-re
 - Only verified facts; GEO is an emerging field, be transparent about what is proven
 - No percentages or statistics without a source
 - When uncertain: "This is an estimate based on current understanding of AI search engines"
+
+## References
+
+- Aggarwal, P. et al. (2024): "GEO: Generative Engine Optimization", KDD 2024 — arxiv.org/abs/2311.09735 (visibility boost up to 40%; citations, quotations, statistics as top strategies; keyword stuffing ineffective)
+- Google Search Central: "Creating helpful, reliable, people-first content" (E-E-A-T framework) — developers.google.com/search/docs/fundamentals/creating-helpful-content
+- Google Search Quality Rater Guidelines (E-E-A-T criteria) — services.google.com/fh/files/misc/hsw-sqrg.pdf
+- Google (2023): "Google Search and AI content" — developers.google.com/search/blog/2023/02/google-search-and-ai-content
+
+## Evidence status
+
+What is **proven** (peer-reviewed or official source):
+
+| Claim | Source |
+|:------|:-------|
+| GEO can boost visibility up to 40% | Aggarwal et al. 2024, KDD |
+| Citations, quotations, and statistics are top strategies | Aggarwal et al. 2024, KDD |
+| Keyword stuffing does NOT work for GEO | Aggarwal et al. 2024, KDD |
+| E-E-A-T as ranking principle (Experience, Expertise, Authoritativeness, Trust) | Google Search Central |
+| Trust is the most important E-E-A-T factor | Google Search Central |
+| AI platforms: Perplexity cites sources explicitly | Aggarwal et al. 2024, tested on Perplexity.ai |
+| Content for people > content for systems | Google Helpful Content guidelines |
+
+What is **own interpretation** (not independently validated):
+
+| Claim | Basis |
+|:------|:------|
+| "5 signals" and their ranking order | Derived from GEO paper + Google guidelines; the priority order is editorial, not empirically tested |
+| GEO scorecard (16 criteria, max 80, score bands) | Own practical framework; criteria are reasonable but thresholds (45/65/80) are not validated |
+| "Quick GEO check" (5 questions) | Simplified self-assessment; no scientific validation |
+| Content length guidelines (600/1,200/1,500+ words) | Industry consensus, not from a peer-reviewed study |
+| GEO improvement strategy (5 steps) | Best-practice synthesis; not experimentally proven as a method |
+| Conversational mapping / bridge sentences | Logical inference; no study proves AI follows these chains |
+
+What is **widely observed but unproven**:
+
+| Claim | Status |
+|:------|:-------|
+| Reddit factor (LLMs weigh Reddit/Quora heavily) | Observed by SEO community; no peer-reviewed confirmation |
+| AI platforms table (ChatGPT browse mode, Gemini via Google index, Copilot via Bing) | Based on public product documentation; subject to change without notice |
+| Brand association via co-occurrence | Plausible based on how embeddings work; not experimentally proven for GEO |
+| Dataset schema markup helps AI recognition | Logical but not tested in GEO research |
