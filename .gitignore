@@ -6,6 +6,9 @@ Desktop.ini
 # Drafts — not for publication
 drafts/
 
+# VS Code extension scaffold — not ready for public
+vscode-extension/
+
 # Editor / IDE
 .vscode/
 *.swp
