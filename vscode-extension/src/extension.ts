@@ -3,7 +3,7 @@ import * as path from 'path';
 import * as fs from 'fs';
 
 const SKILLS = ['seo-strategy', 'geo-optimization', 'seo-keyword-research', 'content-creator'];
-const REPO_URL = 'https://github.com/helder-ai/marketing-skills.git';
+const REPO_URL = 'https://github.com/WilcoRakhorst/helder-ai-marketing-skills.git';
 
 export function activate(context: vscode.ExtensionContext) {
 	const installCmd = vscode.commands.registerCommand('marketingSkills.install', async () => {

@@ -1,7 +1,7 @@
 # Marketing Skills for GitHub Copilot
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
-[![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-Skills-blue?logo=github)](https://docs.github.com/en/copilot)
+[![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-Skills-blue?logo=github)](https://github.com/WilcoRakhorst/helder-ai-marketing-skills)
 [![VS Code](https://img.shields.io/badge/VS%20Code-Compatible-007ACC?logo=visual-studio-code)](https://code.visualstudio.com/)
 
 > Turn GitHub Copilot into a senior marketing strategist that understands **SEO, AI search (GEO), keyword research, and content creation** — all inside your editor.
@@ -17,13 +17,13 @@ These skills cover both traditional search (Google) and AI-powered search engine
 **One-liner installation** — clone directly into your project:
 
 ```bash
-git clone https://github.com/helder-ai/marketing-skills.git .github/skills/marketing && echo "Done! Copilot will auto-discover the skills."
+git clone https://github.com/WilcoRakhorst/helder-ai-marketing-skills.git .github/skills/marketing && echo "Done! Copilot will auto-discover the skills."
 ```
 
 Or add as a **Git submodule** (recommended for teams):
 
 ```bash
-git submodule add https://github.com/helder-ai/marketing-skills.git .github/skills/marketing
+git submodule add https://github.com/WilcoRakhorst/helder-ai-marketing-skills.git .github/skills/marketing
 ```
 
 That's it. Open VS Code, start Copilot Chat in agent mode, and ask something like:
@@ -90,13 +90,13 @@ content-creator          →  Write content that ranks AND gets cited
 ### Option 1: Clone (quickest)
 
 ```bash
-git clone https://github.com/helder-ai/marketing-skills.git .github/skills/marketing
+git clone https://github.com/WilcoRakhorst/helder-ai-marketing-skills.git .github/skills/marketing
 ```
 
 ### Option 2: Git submodule (keeps skills updatable)
 
 ```bash
-git submodule add https://github.com/helder-ai/marketing-skills.git .github/skills/marketing
+git submodule add https://github.com/WilcoRakhorst/helder-ai-marketing-skills.git .github/skills/marketing
 git commit -m "Add marketing skills for Copilot"
 ```
 
@@ -190,5 +190,5 @@ Found an improvement? Open a PR or issue. These skills reflect real-world market
 <p align="center">
   Created by <a href="https://helder-ai.nl">Helder AI</a> — Exploring how AI can make work easier and more fun.
   <br><br>
-  <a href="https://github.com/helder-ai/marketing-skills/stargazers">⭐ Star this repo</a> if you find it useful!
+  <a href="https://github.com/WilcoRakhorst/helder-ai-marketing-skills/stargazers">⭐ Star this repo</a> if you find it useful!
 </p>

@@ -17,7 +17,7 @@ Install and update marketing skills for GitHub Copilot directly from VS Code.
 
 ## How it works
 
-The extension clones the [marketing-skills repository](https://github.com/helder-ai/marketing-skills) into your workspace's `.github/skills/marketing/` directory. GitHub Copilot automatically discovers SKILL.md files in this location and uses them when relevant to your prompts.
+The extension clones the [marketing-skills repository](https://github.com/WilcoRakhorst/helder-ai-marketing-skills) into your workspace's `.github/skills/marketing/` directory. GitHub Copilot automatically discovers SKILL.md files in this location and uses them when relevant to your prompts.
 
 ## Requirements
 

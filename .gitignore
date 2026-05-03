@@ -3,6 +3,9 @@ Thumbs.db
 .DS_Store
 Desktop.ini
 
+# Drafts — not for publication
+drafts/
+
 # Editor / IDE
 .vscode/
 *.swp
