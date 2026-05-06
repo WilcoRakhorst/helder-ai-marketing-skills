@@ -40,4 +40,3 @@ All notable changes to this project will be documented in this file.
 - `seo-keyword-research` skill (keyword research process and guides)
 - `seo-strategy` skill (technical SEO strategy)
 - `content-creator` skill (brand guidelines, content frameworks, social media optimization)
-- VS Code extension packaging

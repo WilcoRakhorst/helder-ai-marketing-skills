@@ -2,7 +2,6 @@
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-Skills-blue?logo=github)](https://github.com/WilcoRakhorst/helder-ai-marketing-skills)
-[![VS Code](https://img.shields.io/badge/VS%20Code-Compatible-007ACC?logo=visual-studio-code)](https://code.visualstudio.com/)
 
 > Turn GitHub Copilot into a senior marketing strategist that understands **SEO, AI search (GEO), keyword research, and content creation** — all inside your editor.
 
@@ -117,7 +116,7 @@ your-project/
 
 ### Option 4: Shared skills reference
 
-Reference this repository directly from your Copilot instructions without copying files. See the [VS Code documentation on shared skills](https://code.visualstudio.com/docs/copilot/copilot-customization) for details.
+Reference this repository directly from your Copilot instructions without copying files. See the [GitHub Copilot documentation](https://docs.github.com/en/copilot/customizing-copilot/reusing-prompts-and-instructions-in-github-copilot) for details.
 
 ---
 
@@ -167,14 +166,12 @@ Found an improvement? Open a PR or issue. These skills reflect real-world market
 **Ideas for contributions:**
 - Additional skill: link building, technical audit automation
 - Translations (Dutch, German, etc.)
-- VS Code extension wrapper for Marketplace distribution
 - Screenshots and demo videos
 
 ---
 
 ## Roadmap
 
-- [ ] VS Code extension (install skills via Marketplace)
 - [ ] Additional skills: link building, competitor analysis
 - [ ] Multi-language support (NL, DE)
 - [ ] Interactive skill configuration wizard

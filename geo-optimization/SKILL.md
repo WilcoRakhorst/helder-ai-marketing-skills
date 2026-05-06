@@ -34,49 +34,9 @@ Five signals (based on GEO research + Google's helpful content guidelines; ranki
 
 ### FAST framework: AI crawlability test
 
-Use the FAST framework to quickly determine whether a page is ready for AI crawlers. Test by loading the page with JavaScript disabled — what you see then is what AI crawlers (GPTBot, ClaudeBot, PerplexityBot) see.
+Load pages with JavaScript disabled — what you see is what GPTBot, ClaudeBot, and PerplexityBot see. Dimensions: **F**etchable, **F**ree bot access, **A**ccessible content, **S**tructured markup, **S**chema drift, **S**upporting llms.txt, **T**rimmed DOM.
 
-| Dimension | Question | Action if "No" |
-|:----------|:---------|:----------------|
-| **F — Fetchable** | Is the core content in the initial HTML (no JS required)? | Deploy server-side rendering (SSR) or static HTML |
-| **F — Bot access** | Are GPTBot, ClaudeBot, and PerplexityBot NOT blocked in robots.txt? | Remove user-agent blocks or add Allow rules for AI crawlers |
-| **A — Accessible** | Is the content understandable without scripts? Alt text, semantic headings? | Use HTML5 semantic elements, complete alt text |
-| **S — Structured** | Is schema markup and a clear heading structure present? | Add Article/FAQ schema, structure definition blocks |
-| **S — Schema drift** | Does the JSON-LD match the visible content (price, title, description)? | Sync JSON-LD with visible text — mismatches are seen as untrustworthy by AI |
-| **S — llms.txt** | Is there an `/llms.txt` on the site for AI discovery? | Create `/llms.txt` with site description, core topics, and page index — helps AI models understand your site |
-| **T — Trim** | Is the page free from unnecessary scripts and DOM bloat? | Minimize tracking scripts and unused JS |
-
-**Quick test:** Open the 5 most important pages with JavaScript disabled in the browser. Is the core content still there? If not, GPTBot and ClaudeBot see an empty page.
-
-**Robots.txt check for AI crawlers:**
-```
-# Allow (default — do not block AI bots)
-User-agent: GPTBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-```
-
-**llms.txt example:**
-```
-# Your Brand
-> Knowledge platform that helps small businesses, schools, and healthcare
-> organizations discover AI tools without technical jargon.
-
-## Core topics
-- AI tools for SMBs
-- AI in education
-- GEO (Generative Engine Optimization)
-- GitHub Copilot skills for marketing
-
-## Key pages
-- /blog/ (blog posts on AI tools and workflows)
-- /services/ (workshops and consultancy)
-```
+See [references/fast-framework.md](references/fast-framework.md) for the full checklist, recommended robots.txt config, and llms.txt template.
 
 ## AI platforms
 
@@ -121,14 +81,6 @@ Run a fixed citation audit every month with 20 representative questions your tar
 AI visitors convert on average **4.4× better** than traditional organic search traffic. Total AI referral traffic: ~1.13 billion visits/month with 357% year-over-year growth.
 
 *Source: Backlinko/Semrush AI Traffic Report 2025*
-
-### Practical visibility check (5 questions)
-
-1. Ask relevant questions in ChatGPT, Gemini, and Perplexity (expertise + region)
-2. Note whether your brand is mentioned or only competitors
-3. Check if cited content matches your website
-4. Repeat periodically (models are updated regularly)
-5. Check whether your brand is correctly described (tone vs. fact)
 
 ## GEO scorecard
 
@@ -278,10 +230,6 @@ AI builds a knowledge graph. Goal: make your brand name inseparable from your ex
   ]
   ```
 - **Source diversity:** AI trusts a source faster when multiple platform types say the same thing. Ensure your core message and unique terms also appear on high-authority places that LLMs weigh heavily: Reddit, specialized industry forums, industry association sites. Positive mentions in unstructured data (forum discussions, reviews) reinforce the trustworthiness of your official web content.
-- **Reddit factor:** LLMs (especially ChatGPT and Gemini) weigh discussion platforms like Reddit and Quora heavily for "human recommendations" (widely observed in the SEO community; no peer-reviewed source). Organic discussion of your brand or method in relevant subreddits is to GEO what link building was to SEO.
-- **YouTube factor:** YouTube mentions are the strongest external signal for AI citations — stronger than Wikipedia, Reddit, and backlinks. A YouTube channel with content on your expertise topic directly strengthens brand association in AI models.
-- **Brand mentions vs. backlinks:** Brand mentions on external platforms have a **3× stronger correlation with AI visibility** than traditional backlinks (Ahrefs, December 2025). Actively monitor whether your brand is discussed on YouTube, Reddit, Wikipedia, and LinkedIn — and encourage mentions where possible.
-
 **GEO market perspective (2025-2026):** GEO services market $850M+ (growing to $7.3B in 2031, 34% CAGR) | AI referral traffic +527% year-over-year (SparkToro) | Google AI Overviews: 1.5 billion users/month | Only 23% of marketers actively invest in GEO (2025). *Source: Yahoo Finance/Superlines, SparkToro, Ahrefs Dec 2025, Gartner*
 
 ## AEO — Answer Engine Optimization
@@ -306,49 +254,6 @@ AEO (Answer Engine Optimization) targets **zero-click rich results**: answers th
 
 See [references/anti-patterns-and-references.md](references/anti-patterns-and-references.md).
 
-## Data integrity
-
-- Only verified facts; GEO is an emerging field, be transparent about what is proven
-- No percentages or statistics without a source
-- When uncertain: "This is an estimate based on current understanding of AI search engines"
-
-## References
-
-- Aggarwal, P. et al. (2024): "GEO: Generative Engine Optimization", KDD 2024 — arxiv.org/abs/2311.09735 (visibility boost up to 40%; citations, quotations, statistics as top strategies; keyword stuffing ineffective)
-- Google Search Central: "Creating helpful, reliable, people-first content" (E-E-A-T framework) — developers.google.com/search/docs/fundamentals/creating-helpful-content
-- Google Search Quality Rater Guidelines (E-E-A-T criteria) — services.google.com/fh/files/misc/hsw-sqrg.pdf
-- Google (2023): "Google Search and AI content" — developers.google.com/search/blog/2023/02/google-search-and-ai-content
-
 ## Evidence status
 
-What is **proven** (peer-reviewed or official source):
-
-| Claim | Source |
-|:------|:-------|
-| GEO can boost visibility up to 40% | Aggarwal et al. 2024, KDD |
-| Citations, quotations, and statistics are top strategies | Aggarwal et al. 2024, KDD |
-| Keyword stuffing does NOT work for GEO | Aggarwal et al. 2024, KDD |
-| E-E-A-T as ranking principle (Experience, Expertise, Authoritativeness, Trust) | Google Search Central |
-| Trust is the most important E-E-A-T factor | Google Search Central |
-| AI platforms: Perplexity cites sources explicitly | Aggarwal et al. 2024, tested on Perplexity.ai |
-| Content for people > content for systems | Google Helpful Content guidelines |
-
-What is **own interpretation** (not independently validated):
-
-| Claim | Basis |
-|:------|:------|
-| "5 signals" and their ranking order | Derived from GEO paper + Google guidelines; the priority order is editorial, not empirically tested |
-| GEO scorecard (16 criteria, max 80, score bands) | Own practical framework; criteria are reasonable but thresholds (45/65/80) are not validated |
-| "Quick GEO check" (5 questions) | Simplified self-assessment; no scientific validation |
-| Content length guidelines (600/1,200/1,500+ words) | Industry consensus, not from a peer-reviewed study |
-| GEO improvement strategy (5 steps) | Best-practice synthesis; not experimentally proven as a method |
-| Conversational mapping / bridge sentences | Logical inference; no study proves AI follows these chains |
-
-What is **widely observed but unproven**:
-
-| Claim | Status |
-|:------|:-------|
-| Reddit factor (LLMs weigh Reddit/Quora heavily) | Observed by SEO community; no peer-reviewed confirmation |
-| AI platforms table (ChatGPT browse mode, Gemini via Google index, Copilot via Bing) | Based on public product documentation; subject to change without notice |
-| Brand association via co-occurrence | Plausible based on how embeddings work; not experimentally proven for GEO |
-| Dataset schema markup helps AI recognition | Logical but not tested in GEO research |
+See [references/evidence-status.md](references/evidence-status.md) for a breakdown of proven, own-interpretation, and widely-observed-but-unproven claims.
