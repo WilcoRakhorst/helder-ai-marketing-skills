@@ -184,6 +184,12 @@ Found an improvement? Open a PR or issue. These skills reflect real-world market
 
 ---
 
+## Credits
+
+Thanks to [@demoran](https://coderlegion.com/user/demoran) for pointing out that introductory prose ("This skill is the upstream source for...") and decorative ASCII diagrams in skill bodies are padding — the AI needs instructions, not context it already has. That feedback led to a direct cleanup of the `content-creator` skill.
+
+---
+
 <p align="center">
   Created by <a href="https://helder-ai.nl">Helder AI</a> — Exploring how AI can make work easier and more fun.
   <br><br>
